@@ -10,26 +10,31 @@ function twoNum(a, b) {
     }
 }
 
-twoNum(3, 2)
+twoNum(3, 2);
 
 // Function to find the largest number among three numbers
 function threeNum(a, b, c) {
     if (a > b & a > c) {
-        console.log(a + "(a) is the largest number among a, b, c")
+        console.log(a + "(a) is the largest number among a, b, c");
     } else if(b > a & b > c) {
-        console.log(b + "(b) is the largest number among a, b, c")
+        console.log(b + "(b) is the largest number among a, b, c");
     } else {
-        console.log(c + "(c) is the largest number among a, b, c")
+        console.log(c + "(c) is the largest number among a, b, c");
     }
+
+    // Alternate method -- put variables in an array
+    let arr = [a, b, c];
+    const max = Math.max(...arr);
+    console.log("Largest number among a, b, c = " + max);
 }
 
-threeNum(9, 2 , 7)
+threeNum(9, 2 , 7);
 
 // Function to find the largest number in an array
 function arrayNum(){
-    let arr = [2, 4, 6, 9, 4, 7, 36, 14]
-    const max = Math.max(...arr)
-    console.log("Largest number in the array: " + max)
+    let arr = [2, 4, 6, 9, 4, 7, 36, 14];
+    const max = Math.max(...arr);
+    console.log("Largest number in the array: " + max);
 }
 
 arrayNum();
