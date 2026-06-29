@@ -1,3 +1,4 @@
+// Sum of two integers
 "use strict";
 
 function solution(n) {
