@@ -5,7 +5,7 @@ function reverseNumber(n) {
 }
 
 function reverseNegNumber(n) {
-    console.log (parseFloat(n.toString().split("").reverse().join("")) * Math.sign(n));
+    console.log (Number.parseFloat(n.toString().split("").reverse().join("")) * Math.sign(n));
 
 }
 
